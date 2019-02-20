@@ -19,7 +19,6 @@ const dkimInfo = {
 
 
 dkimInfo.position = "Intern";
-console.log(dkimInfo);
 
 function sayHello (name , service) {
 	
@@ -51,4 +50,11 @@ function myfunction(){
 }
 const result = calculator.divide(10,5)
 
-console.log(result);
+
+const title = document.querySelector("#title");
+
+ function handleResize() {
+	 console.log("I have been resized !");
+ }
+window.addEventListener("resize" ,handleResize);
+
