@@ -1,7 +1,26 @@
-const title = document.querySelector("#title");
-const BASE_COLOR = "#34495e";
-const OTHER_COLOR = "#7f8c8d";
 
+const title  = document.querySelector("#title");
+const CLICKED_CLASS = "clicked";
+
+function handleClick() {
+	const currentClass = title.className;
+	if(currentClass !== CLICKED_CLASS) {
+		title.className = CLICKED_CLASS;
+	} else {
+		title.className = "";
+}
+
+function init() {
+	title.addEventListener("click" , handleClick);
+}
+
+init();
+
+
+//const title = document.querySelector("#title");
+//const BASE_COLOR = "blue";
+//const OTHER_COLOR = "red";
+/*
 var count  = 0;
 function handle () {
 	if (count >1){
@@ -19,9 +38,10 @@ function handleResize(event) {
 }
 function handleClick() {
 	const currentColor = title.style.color;
+
 	console.log(currentColor);
 	if(currentColor === BASE_COLOR){
-		title.style.color = OTHER_COLOR;
+		title.style.coilor = OTHER_COLOR;
 	} else {
 		title.style.color = BASE_COLOR;
 	}
@@ -30,8 +50,8 @@ function handleClick() {
 
 function init() {
 	
-	title.style.color = BASE_COLOR;
-	title.addEventListener("dblclick" , handleClick);
+	
+	title.addEventListener("click" , handle);
 }
 
 function handleOffline() {
@@ -48,7 +68,7 @@ function handleOnline() {
 	
 init();
 
-
+*/
 //window.addEventListener("resize" , handleResize);
 
 //	title.addEventListener("click" , handle);
