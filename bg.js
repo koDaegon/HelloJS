@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const IMG_NUM = 4;
+const IMG_NUM = 1;
 
 function getRandom() {
     const number = Math.floor(Math.random() *IMG_NUM)+1;
