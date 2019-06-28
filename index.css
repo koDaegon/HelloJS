@@ -3,15 +3,29 @@ Body{
 }
 
 h1 {
-	color : #34495e;
-	transition : color 0.5s ease-in-out;
+	color : darkcyan;
+	margin-top: 200px;
+    font-size: 5em;
+    font-weight: 300;
 }
-
+#center {
+	display: block;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+	text-align: center;
+	opacity: 1;
+}
 .cursor{
 	cursor : not-allowed;
 }
-.form {
+.form,
+.greetings {
 	display : none;
+}
+
+.showing{
+	display :block;
 }
 
 
