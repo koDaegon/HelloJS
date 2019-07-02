@@ -26,7 +26,7 @@ function getDate() {
 	const month = date.getMonth();
 	const day = date.getDate();
 
-	var current_date = `${day} / ${month+1}`;
+	var current_date = `${month+1} / ${day}`;
 	var current_year = `${year}`;
 
 	dateTitle.innerText = current_date;
