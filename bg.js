@@ -1,14 +1,12 @@
 const body = document.querySelector("body");
 
-const IMG_NUM = 1;
+const IMG_NUM = 7;
 
 function getRandom() {
-    const number = Math.floor(Math.random() *IMG_NUM)+1;
-    console.log(number);
+    const number = Math.floor(Math.random() *IMG_NUM);
     return number
 }
 function handleLoadImg() {
-   
     console.log("Loading Finshed");
 }
 function paintBg(imgNumber) {
