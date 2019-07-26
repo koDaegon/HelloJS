@@ -17,9 +17,7 @@ h1 {
 	text-align: center;
 	opacity: 1;
 }
-.cursor{
-	cursor : not-allowed;
-}
+
 .form,
 .greetings {
 	display : none;
@@ -28,7 +26,10 @@ h1 {
 .showing{
 	display :block;
 }
-
+.js-weather {
+	position: absolute;
+	top: 40px; left: 1500px;
+}
 
 @keyframes fadeIn {
 	from{
