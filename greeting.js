@@ -23,10 +23,11 @@ function paintGreeting(text) {
 	greeting.classList.add(SHOWING_CN);
 	const date = new Date();
 	const hours = date.getHours();
+	console.log(hours);
 	var greetingComment;
 	if (hours >4 && hours <12) {
 		greetingComment = 'Morning';
-	} else if (hours > 12 && hours <18) {
+	} else if (hours >= 12 && hours <18) {
 		greetingComment = "Afternoon";
 	} else {
 		greetingComment = "Night";
