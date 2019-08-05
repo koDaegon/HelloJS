@@ -7,9 +7,6 @@ const clockContatiner  = document.querySelector(".js_clock"),
 
 function getTime () {
 	const date  = new Date();
-	const year = date.getFullYear();
-	const month = date.getMonth();
-	const day = date.getDate();
 	const min  = date.getMinutes();
 	const hours = date.getHours();
 	const sec = date.getSeconds();
