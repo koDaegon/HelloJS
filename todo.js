@@ -12,7 +12,7 @@ function paintToDo(text) {
         const delBtn = document.createElement("button");
         const span = document.createElement("span");
         const newId = todos.length+1;
-        delBtn.innerText = "Ⓥ";
+        delBtn.innerText += "✔";
         delBtn.addEventListener("click" , deleteTodo);
         span.innerText = text;
         li.appendChild(delBtn);
@@ -30,7 +30,6 @@ function paintToDo(text) {
 }
 
 
-
 function deleteTodo(event) {
         const btn = event.target;
         const li = btn.parentNode;
@@ -42,6 +41,7 @@ function deleteTodo(event) {
         todos = cleanToDos;
         saveTodo();
 }
+
 
 function handleSubmit() {
         event.preventDefault();
