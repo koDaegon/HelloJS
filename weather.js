@@ -20,7 +20,7 @@ function getWeather(lat , lon) {
         const location = json.name;
         weather.innerText = (`${location} @ ${temp}°C  `);
         weather.innerHTML +=`<div>${max_temp}°C / ${min_temp}°C</div>`;
-        console.log(json);
+
     });
     }
 
