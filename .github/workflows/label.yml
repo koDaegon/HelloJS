@@ -2,7 +2,7 @@ name: Labeler
 on: [pull_request]
 
 jobs:
-  label: "good first issue"
+  label: bug
 
     runs-on: ubuntu-latest
 
