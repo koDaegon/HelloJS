@@ -1,4 +1,8 @@
-## This is test branch :tada: 
-- To see the `probot` apps
-- test
-- delete merged branch probot test
+## First side project in JavaScript :tada: 
+- clone of Chrome app on Vanilla JS 
+- Feature
+  - [x] Clock 
+  - [x] To Do List
+  - [x] Weather
+  - [ ] Daily quote
+

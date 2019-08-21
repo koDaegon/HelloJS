@@ -1,27 +1,27 @@
 const body = document.querySelector("body");
 
-const IMG_NUM = 4;
 
 function getRandom() {
-    const number = Math.floor(Math.random() *IMG_NUM)+1;
-    console.log(number);
+    const number = Math.floor(Math.random() *IMG_NUM);
     return number
 }
 function handleLoadImg() {
-   
     console.log("Loading Finshed");
 }
-function paintBg(imgNumber) {
+function paintBg() {
 
     const img = new Image();
-    img.src = `Images/${imgNumber+1}.jpg`;
+    img.src = randomImage(3000,3000 ,'city night');
     img.classList.add("bgimage");
-    img.addEventListener("loadend" , handleLoadImg);
     body.appendChild(img);
 }
 
+function randomImage(wid, hei ,theme) {
+    const randPics = `https://source.unsplash.com/random/${wid}x${hei}/?${theme}`;
+    return randPics;
+}
+
 function init() {
-    const randomNum = getRandom();
-    paintBg(randomNum); 
+     paintBg(); 
 }
 init();

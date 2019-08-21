@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Learning Javascipt </title>
+	<title>Hello Vanila JS </title>
 <meta charset="UTF-8">
 </head>
 <body>
+
+
 <link rel = "stylesheet" href="index.css">
 
-
-	<h1 id ="title" class="cursor">Welcome to Cultural Vistas</h1>
-	<h2> This is side project of Daegon</h2>
-	
-<!--
-<article>
-<h2>Calculator</h2>
-	<div>
-		Simple calculator :)
-		<div>
-	  	Number X: <input type="text" name="valX"><br>
-  		Number Y: <input type="text" name="valY"><br>
-		<button onclick = "myFunction()">Calculate</button><br>
-		<p id = "result">Result : </p>
-		</div>
+	<div class ='center'>
+		<h1 id ='name-title'>Hello Vanila JS</h1>
+		<h2><span class ="user-name">Made by koDaegon</span></h2>
 	</div>
-</article> -->
-
-
-
-<div class = 'js_clock'>
 	
-	<p id = current_date>Date</p>
-	<p id = current_time>clock</p>
+
+	<div class = 'js_clock center '>
+		<div id = 'current_time'></div>
+		<div id = 'current_date'></div>
+		<div id = 'current_year'></div>
 	
-</div>
+	</div>
 
-<form class = "js_form form">
-	<input type="text" placeholder="Please Enter your Name"/>
-</form>
+	<form class = "js_form form center">
+		<input type="text" placeholder="Please Enter your Name"/>
+	</form>
 
-<h4 class="js_gteetings greetings"></h4>
+	<h4 class="js_greetings greetings center"></h4>
+	
 
-<p class ="js-weather"></p>
+		<form class = "js_toDoForm center">
+			<input type ="text" placeholder="Write to do lists">
+		</form>
+	<div class="ToDoFrom center">
+		<ul class = "js_toDoList">
+		</ul>
+	</div>
+
+	<div class ="js_quote center">
+		<div class = "js_quoteImg"></div>		
+		<div class = "js_sentence"></div>
+	</div>
+
+	<div class ="js-weather"></div>
 	
 <script src = "greeting.js"></script>
 <script src = "index3.js"></script>		
 <script src = "clock.js"></script>
+<script src = "todo.js"></script>
 <script src = "bg.js"></script>
+<script src = "weather.js"></script>
+<script src = "quote.js"></script>
 </body>
 </html>

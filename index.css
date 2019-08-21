@@ -1,34 +1,122 @@
-Body{
-	background-color : #ecf0f1;
+Body {
+	background-color: #ecf0f1;
+	color: #FFFAF0;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 h1 {
-	color : #34495e;
-	transition : color 0.5s ease-in-out;
+	color: #FFFAF0;
+	margin-top: 200px;
+	font-size: 4em;
+	font-weight: 300;
+	margin-block-end: 0em;
+	transition: transform .2s;
 }
 
-.cursor{
-	cursor : not-allowed;
+h1:hover {
+	-ms-transform: scale(1.5);
+	/* IE 9 */
+	-webkit-transform: scale(1.5);
+	/* Safari 3-8 */
+	transform: scale(1.5);
 }
-.form {
-	display : none;
+
+.user-name {
+	background-color: #FFB6C1;
+}
+
+h2 {
+	margin-block-start: 0em;
+}
+
+.center {
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	opacity: 1;
+}
+
+.js_form {
+	margin-top: 2%;
+}
+
+.form,
+.greetings {
+	display: none;
+}
+
+.showing {
+	display: block;
+
+}
+
+.js-weather {
+	position: absolute;
+	top: 40px;
+	left: 1500px;
 }
 
 
+[id ^="current_"] {
+	font-size: 1.75em;
+}
+
+
+.js_quote {
+	margin-top: 2em;
+}
+.js_sentence {
+	padding-top: 0.5%;
+	font-size: 1.5em;
+}
+#q_title {
+	background-color: #FFB6C1;
+	font-size: 1.2em;
+}
 @keyframes fadeIn {
-	from{
+	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
 }
-.bgimage{
-	position : absolute;
-	top : 0pt;
-	left : 0pt;
-	width : 100%;
-	height : 100%;
+
+.bgimage {
+	position: absolute;
+	top: 0pt;
+	left: 0pt;
+	width: 100%;
+	height: 100%;
 	z-index: -1;
 	animation: fadeIn 0.5s linear;
 }
+
+ul {
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: auto;
+	height: auto;
+}
+
+button {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	color: red;
+}
+
+
+  
+ 

@@ -1,26 +1,8 @@
 
-const title  = document.querySelector("#title");
-const CLICKED_CLASS = "clicked";
+const title = document.querySelector("#title");
+const BASE_COLOR = "blue";
+const OTHER_COLOR = "red";
 
-function handleClick() {
-	const currentClass = title.className;
-	if(currentClass !== CLICKED_CLASS) {
-		title.className = CLICKED_CLASS;
-	} else {
-		title.className = "";
-}
-
-function init() {
-	title.addEventListener("click" , handleClick);
-}
-
-init();
-
-
-//const title = document.querySelector("#title");
-//const BASE_COLOR = "blue";
-//const OTHER_COLOR = "red";
-/*
 var count  = 0;
 function handle () {
 	if (count >1){
@@ -68,7 +50,7 @@ function handleOnline() {
 	
 init();
 
-*/
+
 //window.addEventListener("resize" , handleResize);
 
 //	title.addEventListener("click" , handle);
