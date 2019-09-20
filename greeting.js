@@ -9,7 +9,7 @@ const  	USER_LS = "currentUser",
 
 function askForName() {
 	form.classList.add(SHOWING_CN);
-	form.addEventListener("onsubmit" , handleSubmit);
+	form.addEventListener("submit" , handleSubmit);
 }
 
 function handleSubmit(event) {
