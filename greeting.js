@@ -1,6 +1,8 @@
 const form = document.querySelector(".js_form") , 
 	input = form.querySelector("input"),
-	greeting = document.querySelector(".js_greetings");
+	greeting = document.querySelector(".js_greetings"),
+	nameTitle = document.querySelector("#name-title");
+	headTitle = document.querySelector('#head-title');
 
 const  	USER_LS = "currentUser",
 		SHOWING_CN = "showing";
@@ -33,6 +35,8 @@ function paintGreeting(text) {
 		greetingComment = "Night";
 	}
 	greeting.innerText = `Good ${greetingComment} ${text} :)`;
+	nameTitle.innerHTML = `${text}'s Todo List`;
+	headTitle.innerText = `Welcome ${text}`;
 }
 
 function saveName(text){

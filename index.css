@@ -4,6 +4,12 @@ Body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+a:link, a:visited {
+	color: #FFFAF0;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
 h1 {
 	color: #FFFAF0;
 	margin-top: 200px;
