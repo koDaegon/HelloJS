@@ -67,9 +67,15 @@ h2 {
 .js_quote {
 	margin-top: 2em;
 }
-.js_sentence {
+.js_content {
 	padding-top: 0.5%;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.js_author {
+	padding-top: 0.5%;
+	font-size: 1em;
+	color :#FFB6C1;
 }
 #q_title {
 	background-color: #FFB6C1;
