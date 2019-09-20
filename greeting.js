@@ -9,7 +9,7 @@ const  	USER_LS = "currentUser",
 
 function askForName() {
 	form.classList.add(SHOWING_CN);
-	form.addEventListener("submit" , handleSubmit);
+	form.addEventListener("onsubmit" , handleSubmit);
 }
 
 function handleSubmit(event) {
@@ -25,7 +25,6 @@ function paintGreeting(text) {
 	greeting.classList.add(SHOWING_CN);
 	const date = new Date();
 	const hours = date.getHours();
-	console.log(hours);
 	var greetingComment;
 	if (hours >4 && hours <12) {
 		greetingComment = 'Morning';
@@ -37,10 +36,13 @@ function paintGreeting(text) {
 	greeting.innerText = `Good ${greetingComment} ${text} :)`;
 	nameTitle.innerHTML = `${text}'s Todo List`;
 	headTitle.innerText = `Welcome ${text}`;
+	
 }
 
 function saveName(text){
-	localStorage.setItem(USER_LS , text);
+	if(text !=''){
+		localStorage.setItem(USER_LS , text);
+	}
  }
 
 function loadName() {

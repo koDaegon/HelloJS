@@ -54,7 +54,7 @@ const result = calculator.divide(10,5)
 const title = document.querySelector("#title");
 
  function handleResize() {
-	 console.log("I have been resized !");
+	 //console.log("I have been resized !");
  }
 window.addEventListener("resize" ,handleResize);
 

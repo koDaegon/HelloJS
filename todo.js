@@ -67,7 +67,7 @@ function loadToDoList() {
 
 function init() {
         loadToDoList();
-        toDoForm.addEventListener("submit" , handleSubmit);
+        toDoForm.addEventListener("onsubmit" , handleSubmit);
 }
 
 init();

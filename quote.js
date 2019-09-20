@@ -24,7 +24,7 @@ const quote = document.querySelector(".js_quote")
    
     const content = quote.querySelector(".js_content");
     const author = quote.querySelector(".js_author");
-    console.log(data);
+ 
     content.innerHTML = `${data.content} `;
     author.innerHTML = `- ${data['author']} -`;
   }
